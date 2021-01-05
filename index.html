@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculas 2020</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+       
+    <div class="mobile-container">
+
+        <div class="topnav">
+          <a href="#" class="active"><img id="logo" src="img\Logomarca_GOV-Minas_Secretaria-Educacao_2019_RGB.png" alt="Logotipo">
+        <div id="myLinks">
+            <a  href="https://www2.educacao.mg.gov.br/#">A secretaria</a>
+            <a href="#">servidor</a>
+            <a href="#">Atendimento</a>
+            <a href="#">Escolas</a>
+            <a href="#">serviços</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
+        
+</header>
+    <section>
+        <div class="owl-carousel">          
+            <div class="banner"> 
+                <img src="img/banner-rematricula-2021.png" alt="matricula 2021"> 
+            </div>
+            <div class="banner"> 
+                <img src="img/banner-rematricula-2021.png" alt="matricula 2021"> 
+            </div>
+        </div>
+            <h1>Esta na hora de fazer a matricula!</h1>
+            <h2>Não deixe para ultima hora acesse agora e faça o cadastro.Tenha os documentos do aluno em mãos.</h2>
+        <button id="matricula" class="btn btn-primary" onclick="myAlert()">Matricula Agora!</button>
+
+        <div class="owl-carousel">          
+            <div class="banner"> 
+                <img src="img/pexels-andrea-piacquadio-3768129.jpg" alt=""> 
+            </div>
+            <div class="banner"> 
+                <img src="img/pexels-agung-pandit-wiguna-3401403.jpg" alt=""> 
+            </div>
+            <div class="banner"> 
+                <img src="img/pexels-photo-3992949.jpeg" alt=""> 
+            </div>
+            <div class="banner"> 
+                <img src="img/pexels-andrea-piacquadio-3768129.jpg" alt=""> 
+            </div>
+        </div>
+            
+    </section>
+    <footer>
+          
+          <p>SEE/MG - Secretaria de Estado de Educação de Minas Gerais</p>
+          <p>Prédio Minas - Rodovia Papa João Paulo II, 4143 - 10º e 11º andar<br>Cidade Administrativa Presidente Tancredo Neves<br>Bairro Serra Verde- Belo Horizonte / MG<br>CEP: 31630-900<br><a href="#">Telefones de contato</a></p>
+    </footer>
+    <script src="css/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+    };
+        function myAlert() {
+        alert("Tenha certeza de estar com todos os documentos em mãos.");
+        window.location="https://www2.educacao.mg.gov.br/#";
+        }
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            autoplay:true, 
+            autoplayTimeout:2800,
+            autoplayHoverPause:true, 
+    
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:2,
+                    nav:false,
+                    loop:true
+                }
+            }
+
+         })
+
+
+   
+   </script>
+</body>
+</html>
